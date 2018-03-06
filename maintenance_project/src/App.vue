@@ -3,15 +3,19 @@
     <img src="src/img/coffee_logo.png">
     <h1>{{ msg }}</h1>
     
-
-      <a href="#" class="button1" v-on:click="onMachinesListClick
-      ">Consulter la liste des machines</a>
-      <a href="#" class="button1" v-on:click="onMapClick
-      ">Consulter la carte</a>
-      <liste></liste>
-      <carte></carte>
-   
-    
+      <div id="buttons">
+        <a href="#" class="button1" v-on:click="onMachinesListClick
+        ">Consulter la liste des machines</a>
+        <a href="#" class="button1" v-on:click="onMapClick
+        ">Consulter la carte</a>
+        
+      </div>
+      <div>
+        <router-link to="/liste_machines">Liste des machines</router-link>
+        <router-link to="/carte">Carte des machines</router-link>
+        <router-link to="/machine">Une machine</router-link>
+        <router-view></router-view>
+      </div>
   </div>
 </template>
 
@@ -86,5 +90,10 @@ li {
 
 a {
   color: #42b983;
+}
+
+#buttons{
+
+  margin-bottom: 2%;
 }
 </style>
