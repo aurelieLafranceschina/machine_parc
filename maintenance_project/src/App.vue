@@ -1,21 +1,15 @@
 <template>
   <div id="app">
-    <img src="src/coffee_logo.png">
+    <img src="src/img/coffee_logo.png">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vueify" target="_blank">vueify</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    
+
+      <a href="#" class="button1" v-on:click="onMachinesListClick
+      ">Consulter la liste des machines</a>
+      <a href="#" class="button1" v-on:click="onMapClick
+      ">Consulter la carte</a>
+   
+    
   </div>
 </template>
 
@@ -24,8 +18,22 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Que voulez-vous faire ?'
     }
+  },
+
+  methods: {
+
+    onMachinesListClick: function() {
+      alert('Vous allez consulter les machines')
+
+    },
+
+    onMapClick: function (){
+      alert('Vous allez consulter la carte')
+    }
+
+
   }
 }
 </script>
@@ -40,10 +48,25 @@ export default {
   margin-top: 60px;
 }
 
-img {
-  width: 200px;
-  height: 200px;
+.button1 {
+    background-color: #b33c00; 
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
+
+.button1:hover {
+
+  background-color: #cc4400; 
+    color: white;
+}
+
 
 h1, h2 {
   font-weight: normal;
