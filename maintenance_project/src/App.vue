@@ -8,6 +8,8 @@
       ">Consulter la liste des machines</a>
       <a href="#" class="button1" v-on:click="onMapClick
       ">Consulter la carte</a>
+      <liste></liste>
+      <carte></carte>
    
     
   </div>
