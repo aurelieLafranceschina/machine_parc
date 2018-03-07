@@ -8,10 +8,21 @@
 <script>
 export default {
   name:'listeMachines',
-  props:['Liste'],
+  props:['name','status','checkedAt'],
+
+   data () {
+    return {
+        cetteMachine: {   
+                    name: 'What else ?',
+                    etat : 'KO',
+                    status: true,
+                    checkedAt: new Date()
+                }
+        }
+    }
 }
 
-
+import Machine from './Machine.vue'
 
 
 </script>

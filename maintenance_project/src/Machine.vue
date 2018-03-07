@@ -10,7 +10,7 @@
 <script>
 export default {
   name:'machine',
-  props:['Machine'],
+  props:['name','status','checkedAt'],
     data () {
     return {
         cetteMachine: {   
