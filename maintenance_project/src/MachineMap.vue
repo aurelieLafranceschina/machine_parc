@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name:'carte des machines',
+  name:'carteMachines',
   props:['Carte'],
 }
 

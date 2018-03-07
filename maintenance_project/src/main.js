@@ -7,8 +7,8 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter);
 Vue.component('liste',Liste);
-Vue.component('carte', Carte);
-Vue.component('machine', Machine);
+Vue.component('carte',Carte);
+Vue.component('machine',Machine);
 
 const routes = [
   {

@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name:'Liste des machines',
+  name:'listeMachines',
   props:['Liste'],
 }
 

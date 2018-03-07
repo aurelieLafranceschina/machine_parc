@@ -54,6 +54,15 @@ export default {
   margin-top: 60px;
 }
 
+.green {
+
+  color : green;
+}
+
+.red {
+  color : red;
+}
+
 .button1 {
     background-color: #b33c00; 
     border-radius: 12px;
