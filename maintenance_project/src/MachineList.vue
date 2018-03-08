@@ -2,12 +2,14 @@
 
 <div>
     <ul id="machines">
-      <li v-for="machine in machines" :key="machine.id">
-        <h1>{{machine.name}}</h1>
-        <h3 v-if="machine.status" class="green" >Statut OK</h3>
-        <h3 v-else class="red">Statut KO</h3>
-        <h5>{{machine.checkedAt.toLocaleString()}}</h5>
-      </li>
+     <machine v-for="machine in machines" :key="machine.id"
+     v-bind:name="machine.name"
+     v-bind:status="machine.status"
+     v-bind:checkedAt="machine.checkedAt"
+
+     >
+       
+      </machine> 
     </ul>
   </div>
   
