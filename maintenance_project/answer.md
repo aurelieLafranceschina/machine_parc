@@ -40,6 +40,7 @@ La date de dernière mise à jour , le nombre de stars
 ##Ou au contraire méfiance ?
 Quand les dernières mise à jour sont trop anciennes, ou qu'il n'y a pas beaucoup d'étoiles. '
 
+##Question : A quoi sert une clef API ? Puis je partager cette clef ? Dois je la commiter ?
 
 Votre réponse :
-
+Les clés API sont utilisées pour suivre et contrôler lutilisation de lAPI.
