@@ -10,6 +10,7 @@
 <script>
 
 
+
 export default {
   name:'machine',
   props:['name','status','checkedAt'],

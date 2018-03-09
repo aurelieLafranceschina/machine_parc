@@ -20,13 +20,15 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'app',
   data () {
     return {
-      msg: 'Que voulez-vous faire ?'
-    }
-  },
+      msg: 'Que voulez-vous faire ?',
+
+      
 
   methods: {
 
@@ -38,7 +40,8 @@ export default {
     onMapClick: function (){
       alert('Vous allez consulter la carte')
     }
-
+  }
+  }
 
   }
 }

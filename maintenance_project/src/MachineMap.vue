@@ -13,7 +13,7 @@
           v-for="machine in machines"
           :position="machine.position"
           :clickable="true"
-          :draggable="true"
+          :draggable="false"
           @click="center=machine.position">
         </gmap-marker>
       </gmap-map>
