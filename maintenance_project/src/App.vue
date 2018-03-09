@@ -28,23 +28,21 @@ export default {
     return {
       msg: 'Que voulez-vous faire ?',
 
-      
+    }
+  },
 
   methods: {
-
     onMachinesListClick: function() {
       alert('Vous allez consulter les machines')
-
     },
-
     onMapClick: function (){
       alert('Vous allez consulter la carte')
+      }
     }
   }
-  }
 
-  }
-}
+  
+
 </script>
 
 <style scoped>

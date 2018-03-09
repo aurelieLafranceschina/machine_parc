@@ -3,7 +3,7 @@
         <h1>{{name}}</h1>
         <h3 v-if="status" class="green" >Statut OK</h3>
         <h3 v-else class="red">Statut KO</h3>
-        <h5>{{checkedAt.toLocaleString()}}</h5>
+        <h5 v-if="checkedAt">{{checkedAt.toLocaleString()}}</h5>
       </li>
 </template>
 

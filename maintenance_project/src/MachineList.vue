@@ -11,6 +11,8 @@
        
       </machine> 
     </ul>
+
+    
   </div>
   
 </template>
@@ -25,12 +27,17 @@ export default {
   props:['name','status','checkedAt'],
     
   created() {
+    console.log('requete en cours');
     axios.get(`https://machine-api-campus.herokuapp.com/api/machines`)
     .then(response => {
       // JSON responses are automatically parsed.
+
+      // this.loading = !this.loading
       this.machines = response.data
+      console.log('requete terminée');
     })
     .catch(e => {
+      console.log('ERROR');
       this.errors.push(e)
     })
   },
@@ -39,7 +46,8 @@ export default {
      return{
       machines: [], // au début la liste des machines est vide
       loading: false,
-      error: null,
+      errors: null,
+      
 
     //   machines: [{
     //     id: 1,
